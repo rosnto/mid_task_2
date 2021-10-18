@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="ros_base" type="temp.py" name="temp" output="log" respawn="false"/>
+</launch>
