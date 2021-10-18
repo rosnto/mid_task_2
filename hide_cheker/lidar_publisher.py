@@ -4,10 +4,9 @@ from std_msgs.msg import UInt32
 def main():
     pub = rospy.Publisher('temp', UInt32, queue_size=10)
     rospy.init_node('node', anonymous=True)
-    rate = rospy.Rate(10) # 10hz
+    rate = rospy.Rate(10)
     while not rospy.is_shutdown():
-        temp = 32
-        hello_str = "hello world"
+        temp = 29
         pub.publish(temp)
         rate.sleep()
 
